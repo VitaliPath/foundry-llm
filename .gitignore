@@ -4,3 +4,10 @@
 .venv/
 # personal scratch
 notes/
+
+# Python build
+*.egg-info/
+__pycache__/
+*.py[cod]
+# Local venv
+.venv/

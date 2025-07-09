@@ -1,0 +1,11 @@
+[project]
+name = "foundry-llm"
+version = "0.0.1"
+description = "From-scratch, object-oriented LLM implementation."
+authors = [{name = "Sean Stoneburner"}]
+requires-python = ">=3.10"
+dependencies = ["torch>=2.2"]
+
+[build-system]
+requires = ["setuptools>=67", "wheel"]
+build-backend = "setuptools.build_meta"
