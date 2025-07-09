@@ -1,0 +1,6 @@
+# macOS
+.DS_Store
+# virtual environments
+.venv/
+# personal scratch
+notes/

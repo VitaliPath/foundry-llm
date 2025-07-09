@@ -1,0 +1,33 @@
+# .pre-commit-config.yaml
+repos:
+  # --- Universal hygiene ---------------------------------------------
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v5.0.0
+    hooks:
+      - id: trailing-whitespace      # strips stray spaces
+      - id: end-of-file-fixer        # ensures file ends with \n
+      - id: check-yaml               # validates *.yml / *.yaml
+      - id: check-added-large-files  # warns on >500 kB blobs
+
+  # --- Python formatter ----------------------------------------------
+  - repo: https://github.com/psf/black
+    rev: 25.1.0
+    hooks:
+      - id: black
+        language_version: python3
+        # Black’s default line length is 88; tweak if desired:
+        # args: ["--line-length", "100"]
+
+  # --- Import sorter --------------------------------------------------
+  - repo: https://github.com/pycqa/isort
+    rev: 6.0.1
+    hooks:
+      - id: isort
+        args: ["--profile", "black"]
+
+  # --- Linter / static analysis --------------------------------------
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    rev: v0.12.2
+    hooks:
+      - id: ruff
+        args: [--fix]     # apply safe autofixes automatically
