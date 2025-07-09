@@ -2,7 +2,7 @@
 
 *A principled, iterative, and object-oriented journey to build a large language model from scratch.*
 
-[![CI](https://github.com/<your-username>/foundry-llm/actions/workflows/ci.yml/badge.svg)](https://github.com/<your-username>/foundry-llm/actions)
+[![CI](https://github.com/VitaliPath/foundry-llm/actions/workflows/ci.yml/badge.svg)](https://github.com/VitaliPath/foundry-llm/actions)
 
 ---
 
